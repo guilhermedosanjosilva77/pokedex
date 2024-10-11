@@ -1,0 +1,245 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilo da Pokédex */
+.pokedex {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 0;
+}
+
+/* Estilos dos Cards */
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card:active {
+    transform: scale(0.95); /* Reduz a escala ao clicar */
+}
+
+/* Estilos das Imagens */
+.card-image {
+    width: 100%;
+    height: auto;
+    animation: float 3s ease-in-out infinite; /* Animação para o Pokémon */
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #444;
+    margin: 10px 0;
+}
+
+.card-subtitle {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+    padding: 0 10px;
+}
+
+/* Cores dos Tipos de Pokémon */
+.card.grass {
+    border-left: 5px solid #78C850;
+}
+
+.card.fire {
+    border-left: 5px solid #F08030;
+}
+
+.card.water {
+    border-left: 5px solid #6890F0;
+}
+
+.card.electric {
+    border-left: 5px solid #F8D030;
+}
+
+.card.ice {
+    border-left: 5px solid #98D8D8;
+}
+
+.card.fighting {
+    border-left: 5px solid #C03028;
+}
+
+.card.poison {
+    border-left: 5px solid #A040B0;
+}
+
+.card.ground {
+    border-left: 5px solid #E0C068;
+}
+
+.card.flying {
+    border-left: 5px solid #A890F0;
+}
+
+.card.psychic {
+    border-left: 5px solid #F85888;
+}
+
+.card.bug {
+    border-left: 5px solid #A8B820;
+}
+
+.card.rock {
+    border-left: 5px solid #B8A038;
+}
+
+.card.ghost {
+    border-left: 5px solid #705898;
+}
+
+.card.dragon {
+    border-left: 5px solid #7038F8;
+}
+
+.card.dark {
+    border-left: 5px solid #705848;
+}
+
+.card.fairy {
+    border-left: 5px solid #EE99AC;
+}
+
+/* Estilos de Poder */
+.card.power-strong {
+    background-color: #ffeb3b; /* Amarelo claro */
+}
+
+.card.power-medium {
+    background-color: #ffcc00; /* Amarelo */
+}
+
+.card.power-weak {
+    background-color: #ffc107; /* Amarelo escuro */
+}
+
+/* Efeitos de Poder */
+.card.power-strong:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card.power-medium:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.card.power-weak:hover {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Animação do Pokémon */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Move para cima */
+    }
+    100% {
+        transform: translateY(0); /* Volta para a posição original */
+    }
+}
+/* Estilos dos Cards */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    animation: sway 5s infinite alternate; /* Animação de balanço */
+}
+
+/* Degradê para cada tipo */
+.card.grass {
+    background: linear-gradient(to top, #78C850, #A8D8B9);
+}
+
+.card.fire {
+    background: linear-gradient(to top, #F08030, #F4B63A);
+}
+
+.card.water {
+    background: linear-gradient(to top, #6890F0, #A0C4FF);
+}
+
+.card.electric {
+    background: linear-gradient(to top, #F8D030, #FCE67B);
+}
+
+.card.ice {
+    background: linear-gradient(to top, #98D8D8, #C1EBEB);
+}
+
+.card.fighting {
+    background: linear-gradient(to top, #C03028, #D67C7D);
+}
+
+.card.poison {
+    background: linear-gradient(to top, #A040B0, #C99CC5);
+}
+
+.card.ground {
+    background: linear-gradient(to top, #E0C068, #E7D59D);
+}
+
+.card.flying {
+    background: linear-gradient(to top, #A890F0, #D1D5E0);
+}
+
+.card.psychic {
+    background: linear-gradient(to top, #F85888, #F4B6B9);
+}
+
+.card.bug {
+    background: linear-gradient(to top, #A8B820, #C1C782);
+}
+
+.card.rock {
+    background: linear-gradient(to top, #B8A038, #D1C4A8);
+}
+
+.card.ghost {
+    background: linear-gradient(to top, #705898, #B7A8C6);
+}
+
+.card.dragon {
+    background: linear-gradient(to top, #7038F8, #B2A3E1);
+}
+
+.card.dark {
+    background: linear-gradient(to top, #705848, #C4BFBF);
+}
+
+.card.fairy {
+    background: linear-gradient(to top, #EE99AC, #F1B3C4);
+}
